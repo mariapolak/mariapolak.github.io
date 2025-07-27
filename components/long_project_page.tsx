@@ -25,15 +25,15 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
 
     return (
         <ProjectLayout>
-            <div className="flex flex-col w-full pt-[8vh] pb-[10vh] px-5 md:px-[8%] gap-10">
+            <div className="container mx-auto py-[10vh] px-10 md:px-auto">
                 <div className="flex flex-col lg:flex-row lg:h-[calc(100vh-10vh)] gap-10">
                     <h1 className={styles.titleStyleMobile}>{title}.</h1>
-                    <div className="flex flex-col gap-5 justify-between w-full lg:w-4/7 pb-[10vh] lg:order-first order-3">
+                    <div className="flex flex-col gap-5 justify-between lg:w-4/7 pb-[10vh] lg:order-first order-3">
                         <div className="flex flex-col justify-start gap-5">
                             {/* Title */}
                             <h1 className={styles.titleStyleDesktop}>{title}.</h1>
                             {/* Why */}
-                            <div className="flex-col flex w-full">
+                            <div className="flex-col flex">
                                 <h2 className={styles.subsectionHeaderStyleLeft}>WHY</h2>
                                 <span className={styles.paragraphStyle}>
                                     {why}
@@ -41,14 +41,14 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                             </div>
                         </div>
                         {/* Achieve */}
-                        <div className="flex-col flex w-full items-center">
+                        <div className="flex-col flex items-center">
                             <h2 className={styles.subsectionHeaderStyleLeft}>ACHIEVED</h2>
                             <span className={styles.paragraphStyle}>
                                 {achieved}
                             </span>
                         </div>
                         {/* Extra */}
-                        <div className="flex-col flex w-full items-end relative">
+                        <div className="flex-col flex items-end relative">
                             {/* Arrow See More */}
                             <div className="absolute hidden lg:flex bottom-[-10px] left-[-10px] flex flex-col items-center">
                                 <span
@@ -63,14 +63,14 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                                     SCROLL TO SEE MORE
                                 </span>
                                 <svg width="40" height="130" viewBox="0 0 40 130" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
-                                    <motion.path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" 
-                                        initial={{ pathLength: 0 }} 
-                                        animate={{ pathLength: 1 }} 
-                                        transition={{ duration: 0.75 }}/>
-                                    <motion.path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
-                                        initial={{ pathLength: 0 }} 
-                                        animate={{ pathLength: 1 }} 
-                                        transition={{ duration: 0.75 }}/>
+                                    <motion.path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                        initial={{ pathLength: 0 }}
+                                        animate={{ pathLength: 1 }}
+                                        transition={{ duration: 0.75 }} />
+                                    <motion.path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                        initial={{ pathLength: 0 }}
+                                        animate={{ pathLength: 1 }}
+                                        transition={{ duration: 0.75 }} />
                                 </svg>
                             </div>
                             <h2 className={styles.subsectionHeaderStyleLeft}>EXTRA</h2>
@@ -131,7 +131,6 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
 
                     </div>
                 </div>
-
             </div>
         </ProjectLayout>
 
