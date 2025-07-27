@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'Timbre Toys',
+};
 
 export default function TimbreToys() {
     const title = "Timbre Toys";

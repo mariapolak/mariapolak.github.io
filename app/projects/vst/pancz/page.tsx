@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import LongProjectPage from "@/components/long_project_page";
+
+export const metadata: Metadata = {
+  title: 'Pancz',
+};
 
 export default function Pancz() {
     const title = "Pancz";

@@ -30,7 +30,7 @@ export default function CommercialProjects() {
             <ProjectDevHeader title="ıntakewıse" />
             <ProjectDevDescription
                 description={descriptions.intakewise}
-                link="/commercial/intakewise"
+                link="/projects/commercial/intakewise"
             />
             </ProjectDev>
 
@@ -48,7 +48,7 @@ export default function CommercialProjects() {
             <ProjectDevHeader title="Flashsoft" />
             <ProjectDevDescription
                 description={descriptions.flashsoft}
-                link="/commercial/flashsoft"
+                link="/projects/commercial/flashsoft"
             />
             </ProjectDev>
         </div>

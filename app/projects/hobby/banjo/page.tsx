@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'Banjo PM',
+};
 
 export default function Banjo() {
     const title = "Banjo";

@@ -3,9 +3,14 @@ import "./globals.css";
 import Footer from "./footer";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Maria Polak",
-  description: "",
+  title: {
+    template: '%s | Maria Polak',
+    default: 'Portfolio | Maria Polak',
+  },
+  description: 'Portfolio of Maria Polak',
+  metadataBase: new URL('https://mariapolak.github.io/'),
 };
+
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (

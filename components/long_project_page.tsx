@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import ProjectLayout from "./layout_project";
+import ProjectLayout from "../app/projects/layout";
 import Link from "next/link";
 import { motion } from "framer-motion";
 

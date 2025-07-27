@@ -1,7 +1,12 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
 
-export default function intakewise() {
-    const title = "Intakewise";
+export const metadata: Metadata = {
+  title: 'Flashsoft',
+};
+
+export default function Flashsoft() {
+    const title = "Flashsoft";
     const why = "Because it's a great project";
     const achieved = "Achieved a lot";
     const extra = "Some extra information";
@@ -11,7 +16,7 @@ export default function intakewise() {
     return (
         <ShortProjectPage
             title={title}
-            image="/commercial/intakewise/main.png"
+            image="/commercial/flashsoft/main.png"
             why={why}
             what={achieved}
             results={extra}

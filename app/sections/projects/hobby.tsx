@@ -36,7 +36,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="PS and TSM in Speech Data Augmentation" />
                 <ProjectUniDescription
                     description={descriptions.pstsm}
-                    link="/hobby/pstsm"
+                    link="/projects/hobby/pstsm"
                 />
 
             </ProjectUni>
@@ -55,7 +55,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="STN-based Pitch-Shifting" />
                 <ProjectUniDescription
                     description={descriptions.stn}
-                    link="/hobby/stn"
+                    link="/projects/hobby/stn"
                 />
 
             </ProjectUni>
@@ -74,7 +74,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Granular Hands" />
                 <ProjectUniDescription
                     description={descriptions.greverb}
-                    link="/hobby/greverb"
+                    link="/projects/hobby/greverb"
                 />
 
             </ProjectUni>
@@ -96,7 +96,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Banjo Physical Model" />
                 <ProjectUniDescription
                     description={descriptions.banjo}
-                    link="/hobby/banjo"
+                    link="/projects/hobby/banjo"
                 />
             </ProjectUni>
 
@@ -116,7 +116,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Timbre Toys" />
                 <ProjectUniDescription
                     description={descriptions.timbretoys}
-                    link="/hobby/timbretoys"
+                    link="/projects/hobby/timbretoys"
                 />
 
             </ProjectUni>
@@ -135,7 +135,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Gluphone" />
                 <ProjectUniDescription
                     description={descriptions.gluphone}
-                    link="/hobby/gluphone"
+                    link="/projects/hobby/gluphone"
                 />
 
             </ProjectUni>
@@ -155,7 +155,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Vocal Distortion" />
                 <ProjectUniDescription
                     description={descriptions.roughness}
-                    link="/hobby/roughness"
+                    link="/projects/hobby/roughness"
                 />
 
             </ProjectUni>
@@ -176,7 +176,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Emotions in AI-generated music" />
                 <ProjectUniDescription
                     description={descriptions.emotions}
-                    link="/hobby/ai_hum"
+                    link="/projects/hobby/ai_hum"
                 />
 
             </ProjectUni>
@@ -195,7 +195,7 @@ export default function HobbyProjects() {
                 <ProjectUniHeader title="Instrument Recognition" />
                 <ProjectUniDescription
                     description={descriptions.mlme}
-                    link="/hobby/mlme"
+                    link="/projects/hobby/mlme"
                 />
             </ProjectUni>
         </div>

@@ -21,7 +21,7 @@ export default function VSTProjects() {
                 <div className="hidden md:flex text-justify">
                     <ProjectVSTDescription
                         description={descriptions.ocs}
-                        link="/vst/ocs-45">
+                        link="/projects/vst/ocs-45">
                     </ProjectVSTDescription>
                 </div>
                 <Image
@@ -35,7 +35,7 @@ export default function VSTProjects() {
                     <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
                     <ProjectVSTDescription
                         description={descriptions.ocs}
-                        link="/vst/ocs-45"
+                        link="/projects/vst/ocs-45"
                     ></ProjectVSTDescription>
                 </div>
             </ProjectVST>
@@ -56,7 +56,7 @@ export default function VSTProjects() {
                 </div>
                 <ProjectVSTDescription
                     description={descriptions.pancz}
-                    link="/vst/pancz">
+                    link="/projects/vst/pancz">
                 </ProjectVSTDescription>
                 <div className="hidden md:flex">
                     <ProjectVSTHeaderRotated
@@ -76,7 +76,7 @@ export default function VSTProjects() {
                 </div>
                 <div className="hidden md:flex text-justify"><ProjectVSTDescription
                     description={descriptions.spacer}
-                    link="/vst/spacer"></ProjectVSTDescription></div>
+                    link="/projects/vst/spacer"></ProjectVSTDescription></div>
                 <Image
                     className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
                     src="/plugins/plugin3.png"
@@ -88,7 +88,7 @@ export default function VSTProjects() {
                     <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
                     <ProjectVSTDescription
                         description={descriptions.spacer}
-                        link="/vst/spacer"></ProjectVSTDescription>
+                        link="/projects/vst/spacer"></ProjectVSTDescription>
                 </div>
             </ProjectVST>
         </section>

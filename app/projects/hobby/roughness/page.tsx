@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'Vocal Distortion',
+};
 
 export default function Roughness() {
     const title = "Vocal Distortion";

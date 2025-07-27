@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import LongProjectPage from "@/components/long_project_page";
+
+export const metadata: Metadata = {
+  title: 'OCS-45',
+};
 
 export default function OCS_45() {
     const title = "OCS-45";

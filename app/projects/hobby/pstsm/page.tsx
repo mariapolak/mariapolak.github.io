@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'PS-TSM Comparison',
+};
 
 export default function PSTSM() {
     const title = "Pitch-Shifting and Time-Stretching in Speech Data Augmentation";

@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'Emotions AI vs Human',
+};
 
 export default function AIHUM() {
     const title = "Emotions in AI-generated music compared to emotions in human-composed music";

@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import ShortProjectPage from "@/components/short_project_page";
+
+export const metadata: Metadata = {
+  title: 'CNN Instrument Recognition',
+};
 
 export default function MLME() {
     const title = "CNN-based Instrument Recognition";
