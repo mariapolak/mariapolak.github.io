@@ -42,7 +42,7 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                         </div>
                         {/* Achieve */}
                         <div className="flex-col flex items-center">
-                            <h2 className={styles.subsectionHeaderStyleLeft}>ACHIEVED</h2>
+                            <h2 className={styles.subsectionHeaderStyleLeft}>WHAT</h2>
                             <span className={styles.paragraphStyle}>
                                 {achieved}
                             </span>
@@ -66,14 +66,14 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                                     <motion.path d="M20 5V120" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                         initial={{ pathLength: 0 }}
                                         animate={{ pathLength: 1 }}
-                                        transition={{ duration: 0.75 }} />
+                                        transition={{ duration: 1, delay: 0.15 }} />
                                     <motion.path d="M10 110L20 120L30 110" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         initial={{ pathLength: 0 }}
                                         animate={{ pathLength: 1 }}
-                                        transition={{ duration: 0.75 }} />
+                                        transition={{ duration: 1, delay: 0.15 }} />
                                 </svg>
                             </div>
-                            <h2 className={styles.subsectionHeaderStyleLeft}>EXTRA</h2>
+                            <h2 className={styles.subsectionHeaderStyleLeft}>RESULTS</h2>
                             <span className={styles.paragraphStyle}>
                                 {extra}
                             </span>
@@ -81,7 +81,7 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                     </div>
                     <div className="flex flex-col gap-10 items-center lg:justify-start w-full lg:w-3/7 order-2 lg:order-last">
                         <Image
-                            className="shadow-lg bg-white sm:p-7 rounded-md w-full md:w-2/3 lg:w-full"
+                            className="rounded-md w-2/3 lg:w-full object-contain max-h-[50vh]"
                             src={image}
                             alt="stn"
                             width={1}

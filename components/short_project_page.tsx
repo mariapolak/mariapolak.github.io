@@ -2,9 +2,9 @@ import Image from "next/image";
 import ProjectLayout from "./layout_project";
 import Link from "next/link";
 
-export default function ShortProjectPage({  title, image, why, achieved, extra, skills, links }:
+export default function ShortProjectPage({  title, image, why, what, results, skills, links }:
     {
-        title: string; image: string; why: string; achieved: string; extra: string;
+        title: string; image: string; why: string; what: string; results: string;
         skills: string[]; links: { name: string; href: string }[]
     }) {
 
@@ -16,7 +16,8 @@ export default function ShortProjectPage({  title, image, why, achieved, extra, 
 
     return (
         <ProjectLayout>
-            <div className="flex flex-col lg:flex-row w-full h-[calc(100vh-8rem)] pt-[8vh] pb-[10vh] px-5 md:px-[8%] gap-10">
+            <div className="container mx-auto py-[10vh] px-10 md:px-auto">
+                <div className="flex flex-col lg:flex-row lg:h-[calc(100vh-10vh)] gap-10">
                 <h1 className={titleStyleMobile}>{title}.</h1>
                 <div className="flex flex-col gap-5 justify-between w-full lg:w-4/7 pb-[10vh] lg:order-first order-3">
                     <div className="flex flex-col justify-start gap-5">
@@ -32,22 +33,22 @@ export default function ShortProjectPage({  title, image, why, achieved, extra, 
                     </div>
                     {/* Achieve */}
                     <div className="flex-col flex w-full items-center">
-                        <h2 className={subsectionHeaderStyleLeft}>ACHIEVED</h2>
+                        <h2 className={subsectionHeaderStyleLeft}>WHAT</h2>
                         <span className={paragraphStyle}>
-                            {achieved}
+                            {what}
                         </span>
                     </div>
                     {/* Extra */}
                     <div className="flex-col flex w-full items-end">
-                        <h2 className={subsectionHeaderStyleLeft}>EXTRA</h2>
+                        <h2 className={subsectionHeaderStyleLeft}>RESULTS</h2>
                         <span className={paragraphStyle}>
-                            {extra}
+                            {results}
                         </span>
                     </div>
                 </div>
                 <div className="flex flex-col gap-10 items-center lg:justify-start w-full lg:w-3/7 order-2 lg:order-last">
                     <Image
-                        className="shadow-lg bg-white sm:p-7 rounded-md w-full md:w-2/3 lg:w-full"
+                        className="rounded-md w-2/3 lg:w-full object-contain max-h-[50vh]"
                         src={image}
                         alt="stn"
                         width={1}
@@ -74,6 +75,7 @@ export default function ShortProjectPage({  title, image, why, achieved, extra, 
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </ProjectLayout>
 

@@ -70,8 +70,8 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:block fixed top-0 flex h-[calc(100vh-20rem)] w-full max-w-[20rem] flex-col pt-4 pl-2 text-gray-700 z-50">
-                <nav className="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal">
+            <div className="hidden lg:block fixed top-0 flex w-full max-w-[13rem] flex-col pt-4 pl-2 text-gray-700 z-50">
+                <nav className="flex min-w-[150px] flex-col gap-1 p-2 font-sans text-base font-normal">
                     {navItems.map((item, index) => (
                         <div role="button" key={index}
                             className="flex items-center w-full p-3 leading-tight transition-all text-start">

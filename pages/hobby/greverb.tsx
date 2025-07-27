@@ -2,19 +2,19 @@ import ShortProjectPage from "@/components/short_project_page";
 
 export default function GReverb() {
     const title = "Granular Hands";
-    const why = "Because it's a great project";
-    const achieved = "Achieved a lot";
-    const extra = "Some extra information";
-    const skills = ["Next.js", "React", "TypeScript"];
-    const links = [{ name: "GitHub", href: "https://github.com" }];
+    const why = "This project explored how intuitive hand gestures could be used to control digital audio effects in real time, aiming to enhance expressiveness in musical performance without relying on traditional hardware controllers. The challenge was to create a system that could interpret natural hand movements and translate them into meaningful audio manipulations, all while maintaining accessibility and responsiveness. I wanted to bridge the gap between human-computer interaction and digital music creation by leveraging computer vision technologies.";
+    const achieved = "I developed a system that uses a standard webcam and Google’s MediaPipe framework to detect and interpret hand gestures. I implemented geometric movement descriptors—such as displacement and rotation—to extract expressive features from the hand motion. These descriptors were then mapped to parameters of a granular delay audio effect, such as grain size, pitch, and feedback. The system was built using Python for gesture recognition and Max MSP for real-time audio processing, with communication between the two handled via the OSC protocol. I also fine-tuned the parameter mappings through iterative testing to ensure smooth and expressive control.";
+    const extra = "The final result was a responsive and engaging system that allowed users to manipulate sound in real time using only their hands. The interaction felt natural and expressive, with minimal latency and a short learning curve. Whether used for precise control or freeform exploration, the system enabled a unique and enjoyable musical experience. This project not only demonstrated the potential of computer vision in music technology but also highlighted the creative possibilities of gesture-based audio interaction.";
+    const skills = ["Python", "Max MSP", "MediaPipe", "Computer Vision", "Audio Processing", "OSC Protocol"];
+    const links = [{ name: "GitHub", href: "https://github.com/mariapolak/GranularHands" }];
 
     return (
         <ShortProjectPage
             title={title}
             image="/hobby/greverb/main.png"
             why={why}
-            achieved={achieved}
-            extra={extra}
+            what={achieved}
+            results={extra}
             skills={skills}
             links={links}
         />

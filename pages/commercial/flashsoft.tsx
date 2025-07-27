@@ -13,8 +13,8 @@ export default function Flashsoft() {
             title={title}
             image="/commercial/flashsoft/main.png"
             why={why}
-            achieved={achieved}
-            extra={extra}
+            what={achieved}
+            results={extra}
             skills={skills}
             links={links}
         />
