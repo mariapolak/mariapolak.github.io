@@ -47,8 +47,8 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`fixed top-0 left-0 flex h-[calc(100vh-20rem)] w-full max-w-[20rem] flex-col pt-4 pl-2 text-gray-700
-                        tansform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
+                <div className={`fixed top-0 left-0 flex w-full max-w-[12rem] flex-col py-4 pl-2 text-gray-700 bg-primary rounded-r-lg
+                        transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
                     <nav className="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal">
                         {navItems.map((item, index) => (
                         <div role="button" key={index}
