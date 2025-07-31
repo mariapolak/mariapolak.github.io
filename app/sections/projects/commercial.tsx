@@ -1,5 +1,6 @@
 import { ProjectDev, ProjectDevDescription, ProjectDevHeader } from "@/components/project_dev"
 import Image from "next/image"
+import Link from "next/link";
 
 
 export default function CommercialProjects() {
@@ -20,36 +21,40 @@ export default function CommercialProjects() {
                 id="intakewise"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                className={style.oneColProjectImgStyle}
-                src="/commercial/intakewise/main.png"
-                alt="intakewise"
-                width={1}
-                height={1}
-            />
-            <ProjectDevHeader title="ıntakewıse" />
-            <ProjectDevDescription
-                description={descriptions.intakewise}
-                link="/projects/commercial/intakewise"
-            />
+                <Link href="/projects/commercial/intakewise">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/commercial/intakewise/main.png"
+                        alt="intakewise"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectDevHeader title="ıntakewıse" link="/projects/commercial/intakewise" />
+                <ProjectDevDescription
+                    description={descriptions.intakewise}
+                    link="/projects/commercial/intakewise"
+                />
             </ProjectDev>
 
             <ProjectDev
                 id="flashsoft"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                className={style.oneColProjectImgStyle}
-                src="/commercial/flashsoft/main.png"
-                alt="flashsoft"
-                width={1}
-                height={1}
-            />
-            <ProjectDevHeader title="Flashsoft" />
-            <ProjectDevDescription
-                description={descriptions.flashsoft}
-                link="/projects/commercial/flashsoft"
-            />
+                <Link href="/projects/commercial/flashsoft">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/commercial/flashsoft/main.png"
+                        alt="flashsoft"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectDevHeader title="Flashsoft" link="/projects/commercial/flashsoft" />
+                <ProjectDevDescription
+                    description={descriptions.flashsoft}
+                    link="/projects/commercial/flashsoft"
+                />
             </ProjectDev>
         </div>
     );

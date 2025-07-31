@@ -1,5 +1,6 @@
 import { ProjectVST, ProjectVSTDescription, ProjectVSTHeader, ProjectVSTHeaderRotated } from "@/components/project_vst"
 import Image from "next/image"
+import { useRouter } from 'next/navigation'
 
 export default function VSTProjects() {
     const descriptions = {
@@ -7,6 +8,8 @@ export default function VSTProjects() {
         pancz: `Pancz is an audio plugin equipped with a powerful multi-band transient shaper, clipping tool, precise waveform analyzer and additional tone manipulation effects. It uses complex audio processing to directly control the shape of the sound. With its convenient waveform window and a “cut line” you are able to visually manipulate the sound making it look and sound the way the user wants to. `,
         spacer: `Spacer, a modular creative effects station where time and space are united as one. Spacer has five effects modules which can be linked in any order to generate infinite FX combinations, but are also designed to work as independent processing stations in their own right. It creates dreamlike overtones, shifting soundscapes or contemporary ambiences. `
     }
+
+    const router = useRouter()
 
     return (
         <section className="flex flex-col items-center divide-gray-400 divide-1 divide-y">
@@ -16,6 +19,7 @@ export default function VSTProjects() {
                 <div className="hidden md:flex">
                     <ProjectVSTHeaderRotated
                         title="OCS-45"
+                        link="/projects/vst/ocs-45"
                         direction={-1}></ProjectVSTHeaderRotated>
                 </div>
                 <div className="hidden md:flex text-justify">
@@ -26,13 +30,14 @@ export default function VSTProjects() {
                 </div>
                 <Image
                     className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    onClick={() => router.push('/projects/vst/ocs-45')}
                     src="/plugins/plugin1.png"
                     alt="ocs"
                     width={3440}
                     height={2171}
                 />
                 <div className="md:hidden flex-col flex">
-                    <ProjectVSTHeader title="OCS-45"></ProjectVSTHeader>
+                    <ProjectVSTHeader title="OCS-45" link="/projects/vst/ocs-45"></ProjectVSTHeader>
                     <ProjectVSTDescription
                         description={descriptions.ocs}
                         link="/projects/vst/ocs-45"
@@ -45,6 +50,7 @@ export default function VSTProjects() {
                 id="Pancz">
                 <Image
                     className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    onClick={() => router.push('/projects/vst/pancz')}
                     src="/plugins/plugin2.png"
                     alt="pancz"
                     width={3840}
@@ -52,7 +58,8 @@ export default function VSTProjects() {
                 />
                 <div className="md:hidden">
                     <ProjectVSTHeader
-                        title="Pancz"></ProjectVSTHeader>
+                        title="Pancz"
+                        link="/projects/vst/pancz"></ProjectVSTHeader>
                 </div>
                 <ProjectVSTDescription
                     description={descriptions.pancz}
@@ -61,6 +68,7 @@ export default function VSTProjects() {
                 <div className="hidden md:flex">
                     <ProjectVSTHeaderRotated
                         title="Pancz"
+                        link="/projects/vst/pancz"
                         direction={1}></ProjectVSTHeaderRotated>
                 </div>
             </ProjectVST>
@@ -72,6 +80,7 @@ export default function VSTProjects() {
                 <div className="hidden md:flex">
                     <ProjectVSTHeaderRotated
                         title="Spacer"
+                        link="/projects/vst/spacer"
                         direction={-1}></ProjectVSTHeaderRotated>
                 </div>
                 <div className="hidden md:flex text-justify"><ProjectVSTDescription
@@ -79,13 +88,14 @@ export default function VSTProjects() {
                     link="/projects/vst/spacer"></ProjectVSTDescription></div>
                 <Image
                     className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    onClick={() => router.push('/projects/vst/spacer')}
                     src="/plugins/plugin3.png"
                     alt="spacer"
                     width={16}
                     height={9}
                 />
                 <div className="md:hidden flex-col flex">
-                    <ProjectVSTHeader title="Spacer"></ProjectVSTHeader>
+                    <ProjectVSTHeader title="Spacer" link="/projects/vst/spacer"></ProjectVSTHeader>
                     <ProjectVSTDescription
                         description={descriptions.spacer}
                         link="/projects/vst/spacer"></ProjectVSTDescription>

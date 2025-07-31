@@ -1,5 +1,6 @@
 import { ProjectUni, ProjectUniDescription, ProjectUniHeader } from "@/components/project_uni"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HobbyProjects() {
     const style = {
@@ -21,19 +22,21 @@ export default function HobbyProjects() {
 
     return (
         <div className="grid sm:grid-2 md:grid-cols-3 gap-x-5 gap-y-5 w-6/7">
-             {/* PS-TSM */}
+            {/* PS-TSM */}
             <ProjectUni
                 id="PSTSM"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/pstsm/main.png"
-                    alt="pstsm"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="PS and TSM in Speech Data Augmentation" />
+                <Link href="/projects/hobby/pstsm">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/pstsm/main.png"
+                        alt="pstsm"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="PS and TSM in Speech Data Augmentation" link="/projects/hobby/pstsm" />
                 <ProjectUniDescription
                     description={descriptions.pstsm}
                     link="/projects/hobby/pstsm"
@@ -45,14 +48,16 @@ export default function HobbyProjects() {
                 id="STN-PS"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/stn/main.png"
-                    alt="stn"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="STN-based Pitch-Shifting" />
+                <Link href="/projects/hobby/stn">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/stn/main.png"
+                        alt="stn"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="STN-based Pitch-Shifting" link="/projects/hobby/stn" />
                 <ProjectUniDescription
                     description={descriptions.stn}
                     link="/projects/hobby/stn"
@@ -64,14 +69,16 @@ export default function HobbyProjects() {
                 id="Hand-GReverb"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/greverb/main.png"
-                    alt="greverb"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Granular Hands" />
+                <Link href="/projects/hobby/greverb">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/greverb/main.png"
+                        alt="greverb"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Granular Hands" link="/projects/hobby/greverb" />
                 <ProjectUniDescription
                     description={descriptions.greverb}
                     link="/projects/hobby/greverb"
@@ -86,14 +93,16 @@ export default function HobbyProjects() {
                 id="Banjo"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/banjo/main.png"
-                    alt="banjo"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Banjo Physical Model" />
+                <Link href="/projects/hobby/banjo">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/banjo/main.png"
+                        alt="banjo"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Banjo Physical Model" link="/projects/hobby/banjo" />
                 <ProjectUniDescription
                     description={descriptions.banjo}
                     link="/projects/hobby/banjo"
@@ -106,14 +115,16 @@ export default function HobbyProjects() {
                 id="TimbreToys"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/timbretoys/main.png"
-                    alt="timbretoys"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Timbre Toys" />
+                <Link href="/projects/hobby/timbretoys">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/timbretoys/main.png"
+                        alt="timbretoys"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Timbre Toys" link="/projects/hobby/timbretoys" />
                 <ProjectUniDescription
                     description={descriptions.timbretoys}
                     link="/projects/hobby/timbretoys"
@@ -125,14 +136,16 @@ export default function HobbyProjects() {
                 id="Gluphone"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/gluphone/main.jpg"
-                    alt="gluphone"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Gluphone" />
+                <Link href="/projects/hobby/gluphone">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/gluphone/main.jpg"
+                        alt="gluphone"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Gluphone" link="/projects/hobby/gluphone" />
                 <ProjectUniDescription
                     description={descriptions.gluphone}
                     link="/projects/hobby/gluphone"
@@ -145,35 +158,39 @@ export default function HobbyProjects() {
                 id="Roughness"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/roughness/main.png"
-                    alt="roughness"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Vocal Distortion" />
+                <Link href="/projects/hobby/roughness">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/roughness/main.png"
+                        alt="roughness"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Vocal Distortion" link="/projects/hobby/roughness" />
                 <ProjectUniDescription
                     description={descriptions.roughness}
                     link="/projects/hobby/roughness"
                 />
 
             </ProjectUni>
-            
+
 
             {/* AIvsHuman Emotions */}
             <ProjectUni
                 id="Emotions"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/ai_hum/main.png"
-                    alt="emotions"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Emotions in AI-generated music" />
+                <Link href="/projects/hobby/ai_hum">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/ai_hum/main.png"
+                        alt="emotions"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Emotions in AI-generated music" link="/projects/hobby/ai_hum" />
                 <ProjectUniDescription
                     description={descriptions.emotions}
                     link="/projects/hobby/ai_hum"
@@ -185,14 +202,16 @@ export default function HobbyProjects() {
                 id="MLME"
                 className={style.oneColProjectDevStyle}
             >
-                <Image
-                    className={style.oneColProjectImgStyle}
-                    src="/hobby/mlme/main.png"
-                    alt="mlme"
-                    width={1}
-                    height={1}
-                />
-                <ProjectUniHeader title="Instrument Recognition" />
+                <Link href="/projects/hobby/mlme">
+                    <Image
+                        className={style.oneColProjectImgStyle}
+                        src="/hobby/mlme/main.png"
+                        alt="mlme"
+                        width={1}
+                        height={1}
+                    />
+                </Link>
+                <ProjectUniHeader title="Instrument Recognition" link="/projects/hobby/mlme" />
                 <ProjectUniDescription
                     description={descriptions.mlme}
                     link="/projects/hobby/mlme"

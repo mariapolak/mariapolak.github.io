@@ -1,5 +1,6 @@
 import { SeeMoreButton } from "./see_more_button"
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
     return (
@@ -12,15 +13,20 @@ export function ProjectVST(prop: { id: string, children: React.ReactNode }) {
     )
 }
 
-export function ProjectVSTHeaderRotated({ title, direction }: { title: string, direction: 1 | -1 }) {
+export function ProjectVSTHeaderRotated({ title, direction, link }: { title: string, direction: 1 | -1, link: string }) {
     return (
-        <h3 className={`text-4xl whitespace-nowrap my-5 ${direction === 1 ? "rotate-90" : "-rotate-90"} mx-[-20]`}>{title}</h3>
+        <Link href={link}>
+            <h3 className={`text-4xl whitespace-nowrap my-5 ${direction === 1 ? "rotate-90" : "-rotate-90"} mx-[-20]`}>{title}</h3>
+        </Link>
     )
 }
 
-export function ProjectVSTHeader({ title }: { title: string }) {
+export function ProjectVSTHeader({ title, link }: { title: string, link: string }) {
     return (
-        <h3 className="text-xl">{title}</h3>
+        <Link href={link}>
+            <h3 className="text-xl">{title}</h3>
+        </Link>
+
     )
 }
 

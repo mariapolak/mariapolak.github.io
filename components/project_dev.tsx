@@ -1,5 +1,6 @@
 import { SeeMoreButton } from "./see_more_button"
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function ProjectDev(prop: { id: string, className?: string, children: React.ReactNode }) {
     return (
@@ -12,10 +13,12 @@ export function ProjectDev(prop: { id: string, className?: string, children: Rea
     )
 }
 
-export function ProjectDevHeader({ title }: { title: string }) {
+export function ProjectDevHeader({ title, link }: { title: string, link: string }) {
     return (
         <div className="min-h-12 justify-center items-center flex border-b border-gray-400 w-full">
-            <h3 className="font-bold">{title}</h3>
+            <Link href={link}>
+                <h3 className="font-bold">{title}</h3>
+            </Link>
         </div>
     )
 }
