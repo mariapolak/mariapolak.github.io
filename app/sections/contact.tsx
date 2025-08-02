@@ -2,8 +2,8 @@ import SectionHeader from "@/components/headers/section_header";
 
 export default function Contact(props: { id: string, ref: React.RefObject<HTMLDivElement | null> }) {
     return (
-        <section className="bg-primary dark:bg-gray-900 dark:text-white z-10" ref={props.ref}>
-            <div className="container mx-auto relative text-center flex flex-col min-h-[600px] h-[50vh] pb-10">
+        <section className="bg-primary dark:bg-neutral-800 z-10" ref={props.ref}>
+            <div className="container mx-auto relative text-center flex flex-col min-h-[600px] h-[100vh] pb-10">
                 <SectionHeader title="Contact" id={props.id} />
                 <div className="flex flex-col h-full justify-center text-left px-10 lg:px-36" id={props.id}>
                     <p className="text-xl py-5">

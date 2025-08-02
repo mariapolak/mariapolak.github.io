@@ -7,7 +7,7 @@ export default function Projects(props: { id: string, ref: React.RefObject<HTMLD
     const subsectionHeaderStyle = "w-6/7 text-left text-2xl mt-10"
 
     return (
-        <section className="dark:bg-gray-900 dark:text-white z-10" ref={props.ref}>
+        <section className="z-10" ref={props.ref}>
             <div className="container mx-auto relative text-center">
                 
                 {/* Content */}

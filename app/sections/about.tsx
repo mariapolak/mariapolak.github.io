@@ -2,7 +2,7 @@ import SectionHeader from "@/components/headers/section_header";
 
 export default function About(props: { id: string, ref: React.RefObject<HTMLDivElement | null> }) {
     return (
-        <section className="bg-primary dark:bg-gray-900 dark:text-white z-10 " ref={props.ref}>
+        <section className="bg-primary dark:bg-neutral-800 z-10 " ref={props.ref}>
             <div className="container mx-auto relative text-center h-[110vh]">
 
                 <SectionHeader title="About Me" id={props.id} />

@@ -47,7 +47,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`fixed top-0 left-0 flex w-full max-w-[12rem] flex-col py-4 pl-2 text-gray-700 bg-primary rounded-r-lg
+                <div className={`fixed top-0 left-0 flex w-full max-w-[12rem] flex-col py-4 pl-2 text-gray-700 dark:text-white bg-primary dark:bg-neutral-800 rounded-r-lg
                         transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden z-50`}>
                     <nav className="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal">
                         {navItems.map((item, index) => (
@@ -55,7 +55,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                             className="flex items-center w-full p-3 leading-tight transition-all text-start">
                             <Link
                                 href={item.href}
-                                className="flex items-center hover:text-gray-400 hover:underline underline-offset-5 active:text-blue-500 relative pl-5"
+                                className={`flex items-center hover:text-neutral-400 relative pl-5 ${item.inView ? "text-neutral-400" : ""}`}
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
                                 {item.inView && (
@@ -70,14 +70,14 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:block fixed top-0 flex w-full max-w-[13rem] flex-col pt-4 pl-2 text-gray-700 z-50">
+            <div className="hidden lg:block fixed top-0 flex w-full max-w-[13rem] flex-col pt-4 pl-2 text-gray-700 dark:text-white z-50">
                 <nav className="flex min-w-[150px] flex-col gap-1 p-2 font-sans text-base font-normal">
                     {navItems.map((item, index) => (
                         <div role="button" key={index}
                             className="flex items-center w-full p-3 leading-tight transition-all text-start">
                             <Link
                                 href={item.href}
-                                className="flex items-center hover:text-gray-400 hover:underline underline-offset-5 active:text-blue-500 relative pl-5"
+                                className={`flex items-center hover:text-neutral-400 relative pl-5 ${item.inView ? "text-neutral-400" : ""}`}
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
                                 {item.inView && (

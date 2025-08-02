@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function ProjectUni(prop: { id: string, className?: string, children: React.ReactNode }) {
     return (
-        <motion.div id={prop.id} className={`flex flex-col bg-primary ${prop.className}`}
+        <motion.div id={prop.id} className={`flex flex-col bg-primary dark:bg-neutral-800 ${prop.className}`}
             whileHover={{ scale: 1.01, transition: { duration: 0.5 }, }}>
             <div className="flex flex-col items-center gap-3 p-5">
                 {prop.children}

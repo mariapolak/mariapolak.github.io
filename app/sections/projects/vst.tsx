@@ -29,9 +29,9 @@ export default function VSTProjects() {
                     </ProjectVSTDescription>
                 </div>
                 <Image
-                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5 cursor-pointer"
                     onClick={() => router.push('/projects/vst/ocs-45')}
-                    src="/plugins/plugin1.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/OCS-45%2Fplugin1.webp?alt=media&token=97399db7-c29c-4ca8-a5f6-36c75eee370e"
                     alt="ocs"
                     width={3440}
                     height={2171}
@@ -49,9 +49,9 @@ export default function VSTProjects() {
             <ProjectVST
                 id="Pancz">
                 <Image
-                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5 cursor-pointer"
                     onClick={() => router.push('/projects/vst/pancz')}
-                    src="/plugins/plugin2.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fplugin2.webp?alt=media&token=d6f10f40-1827-4eac-a6fb-e853aeabbec6"
                     alt="pancz"
                     width={3840}
                     height={2881}
@@ -87,9 +87,9 @@ export default function VSTProjects() {
                     description={descriptions.spacer}
                     link="/projects/vst/spacer"></ProjectVSTDescription></div>
                 <Image
-                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5"
+                    className="w-full sm:w-1/2 lg:w-2/5 rounded-xl mx-5 cursor-pointer"
                     onClick={() => router.push('/projects/vst/spacer')}
-                    src="/plugins/plugin3.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fplugin3.webp?alt=media&token=2635ce2b-1e6c-4ac1-a2ec-4d75c6815091"
                     alt="spacer"
                     width={16}
                     height={9}
