@@ -23,6 +23,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                 {/* Icon for Mobile Menu */}
                 <div className="fixed top-0 right-0 p-4 z-50">
                     <button
+                        aria-label="Open mobile menu"
                         className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center 
                         align-middle text-xs font-medium uppercase text-inherit
                         transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -55,7 +56,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                             className="flex items-center w-full p-3 leading-tight transition-all text-start">
                             <Link
                                 href={item.href}
-                                className={`flex items-center hover:text-neutral-400 relative pl-5 ${item.inView ? "text-neutral-400" : ""}`}
+                                className={`flex items-center hover:text-neutral-500 relative pl-5 ${item.inView ? "text-neutral-500" : ""}`}
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
                                 {item.inView && (
@@ -77,7 +78,7 @@ export default function Navbar(props: {homeRef: RefObject<Element | null>, about
                             className="flex items-center w-full p-3 leading-tight transition-all text-start">
                             <Link
                                 href={item.href}
-                                className={`flex items-center hover:text-neutral-400 relative pl-5 ${item.inView ? "text-neutral-400" : ""}`}
+                                className={`flex items-center hover:text-neutral-500 relative pl-5 ${item.inView ? "text-neutral-500" : ""}`}
                                 id={`nav-link-${item.href.replace("#", "")}`}
                             >
                                 {item.inView && (
