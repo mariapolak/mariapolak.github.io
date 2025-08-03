@@ -16,7 +16,7 @@ export default function GReverb() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/greverb/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Greverb%2Fmain.webp?alt=media&token=9e4f55e5-ce0a-436c-9ed3-3d6e4bdaf760"
             why={why}
             what={achieved}
             results={extra}

@@ -16,7 +16,7 @@ export default function MLME() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/mlme/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fmlme.webp?alt=media&token=fabd6a13-28af-4a22-89b9-a58bcf870b4d"
             why={why}
             what={achieved}
             results={extra}

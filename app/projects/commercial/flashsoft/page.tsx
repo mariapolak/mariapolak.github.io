@@ -16,7 +16,7 @@ export default function Flashsoft() {
     return (
         <ShortProjectPage
             title={title}
-            image="/commercial/flashsoft/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fflashsoft.webp?alt=media&token=8c70c794-80df-4727-be91-2ad2e1bb87a7"
             why={why}
             what={achieved}
             results={extra}

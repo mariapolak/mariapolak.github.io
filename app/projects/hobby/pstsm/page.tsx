@@ -16,7 +16,7 @@ export default function PSTSM() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/pstsm/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fpstsm.webp?alt=media&token=4b80fef8-d7f5-4bce-94b0-adfa4789d539"
             why={why}
             what={achieved}
             results={extra}

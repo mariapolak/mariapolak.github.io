@@ -16,7 +16,7 @@ export default function Roughness() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/roughness/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Froughness.webp?alt=media&token=811ffe7d-14f9-4ca3-85da-5b39362b4046"
             why={why}
             what={achieved}
             results={extra}

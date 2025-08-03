@@ -16,7 +16,7 @@ export default function intakewise() {
     return (
         <ShortProjectPage
             title={title}
-            image="/commercial/intakewise/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fintakewise.webp?alt=media&token=fcbe5414-0949-4a42-b5c1-82a16f3ea932"
             why={why}
             what={achieved}
             results={extra}

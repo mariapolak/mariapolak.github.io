@@ -22,7 +22,7 @@ export default function TimbreToys() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/timbretoys/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Ftimbretoys.webp?alt=media&token=42d42ce5-735f-4439-ad95-943c03cb140d"
             why={why}
             what={achieved}
             results={extra}

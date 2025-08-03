@@ -16,7 +16,7 @@ export default function AIHUM() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/ai_hum/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Faihum.webp?alt=media&token=8be2e9c1-af0e-4c5a-8331-3629bddb02ab"
             why={why}
             what={achieved}
             results={extra}

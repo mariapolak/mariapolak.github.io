@@ -16,7 +16,7 @@ export default function Banjo() {
     return (
         <ShortProjectPage
             title={title}
-            image="/hobby/banjo/main.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fbanjo.webp?alt=media&token=8b45c890-f5a3-45b9-87ce-401938f8165f"
             why={why}
             what={achieved}
             results={extra}

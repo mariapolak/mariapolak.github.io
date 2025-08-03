@@ -24,7 +24,7 @@ export default function CommercialProjects() {
                 <Link href="/projects/commercial/intakewise">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/commercial/intakewise/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fintakewise.webp?alt=media&token=fcbe5414-0949-4a42-b5c1-82a16f3ea932"
                         alt="intakewise"
                         width={1}
                         height={1}
@@ -44,7 +44,7 @@ export default function CommercialProjects() {
                 <Link href="/projects/commercial/flashsoft">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/commercial/flashsoft/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fflashsoft.webp?alt=media&token=8c70c794-80df-4727-be91-2ad2e1bb87a7"
                         alt="flashsoft"
                         width={1}
                         height={1}

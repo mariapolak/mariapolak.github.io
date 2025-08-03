@@ -27,7 +27,7 @@ export default function Hero(props: { id: string, ref: React.RefObject<HTMLDivEl
                     <div className="flex gap-6 rounded-2xl justify-start w-4/5 sm:w-1/2 lg:w-1/3">
                         <Image
                             className="shadow-xl rounded-md md:w-2/3 md:w-full"
-                            src="/me.jpeg"
+                            src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fme.webp?alt=media&token=09c0eef8-ccf9-43ba-93e0-81ea1400d379"
                             alt="me"
                             width={1024}
                             height={768}

@@ -4,9 +4,9 @@ import ProjectLayout from "../app/projects/layout";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function LongProjectPage({ title, image, why, achieved, extra, skills, links, galleryImages }:
+export default function LongProjectPage({ title, image, why, what, results, skills, links, galleryImages }:
     {
-        title: string; image: string; why: string; achieved: string; extra: string;
+        title: string; image: string; why: string; what: string; results: string;
         skills: string[]; links: { name: string; href: string }[]; galleryImages: string[]
     }) {
 
@@ -45,7 +45,7 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                         <div className="flex-col flex items-center">
                             <h2 className={styles.subsectionHeaderStyleLeft}>WHAT</h2>
                             <span className={styles.paragraphStyle}>
-                                {achieved}
+                                {what}
                             </span>
                         </div>
                         {/* Extra */}
@@ -76,7 +76,7 @@ export default function LongProjectPage({ title, image, why, achieved, extra, sk
                             </div>
                             <h2 className={styles.subsectionHeaderStyleLeft}>RESULTS</h2>
                             <span className={styles.paragraphStyle}>
-                                {extra}
+                                {results}
                             </span>
                         </div>
                     </div>

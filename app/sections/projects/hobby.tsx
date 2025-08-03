@@ -30,7 +30,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/pstsm">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/pstsm/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fpstsm.webp?alt=media&token=4b80fef8-d7f5-4bce-94b0-adfa4789d539"
                         alt="pstsm"
                         width={1}
                         height={1}
@@ -51,7 +51,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/stn">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/stn/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/STN%2Fmain.webp?alt=media&token=bb7e7176-211f-4834-9c45-0d935b7ca4e9"
                         alt="stn"
                         width={1}
                         height={1}
@@ -72,7 +72,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/greverb">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/greverb/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Greverb%2FHandDetection.webp?alt=media&token=4a70d963-a02d-443c-8175-b330bacda771"
                         alt="greverb"
                         width={1}
                         height={1}
@@ -96,7 +96,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/banjo">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/banjo/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fbanjo.webp?alt=media&token=8b45c890-f5a3-45b9-87ce-401938f8165f"
                         alt="banjo"
                         width={1}
                         height={1}
@@ -118,7 +118,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/timbretoys">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/timbretoys/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Ftimbretoys.webp?alt=media&token=42d42ce5-735f-4439-ad95-943c03cb140d"
                         alt="timbretoys"
                         width={1}
                         height={1}
@@ -139,7 +139,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/gluphone">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/gluphone/main.jpg"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Gluphone%2Fmain.webp?alt=media&token=fc2f6c22-fe00-4994-be06-232ea575e476"
                         alt="gluphone"
                         width={1}
                         height={1}
@@ -161,7 +161,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/roughness">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/roughness/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Froughness.webp?alt=media&token=811ffe7d-14f9-4ca3-85da-5b39362b4046"
                         alt="roughness"
                         width={1}
                         height={1}
@@ -184,7 +184,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/ai_hum">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/ai_hum/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Faihum.webp?alt=media&token=8be2e9c1-af0e-4c5a-8331-3629bddb02ab"
                         alt="emotions"
                         width={1}
                         height={1}
@@ -205,7 +205,7 @@ export default function HobbyProjects() {
                 <Link href="/projects/hobby/mlme">
                     <Image
                         className={style.oneColProjectImgStyle}
-                        src="/hobby/mlme/main.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Others%2Fmlme.webp?alt=media&token=fabd6a13-28af-4a22-89b9-a58bcf870b4d"
                         alt="mlme"
                         width={1}
                         height={1}
