@@ -27,6 +27,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'firebasestorage.googleapis.com',
+        pathname: '/v0/b/portfolio-assets-91518.firebasestorage.app/o/**',
       },
     ],
   },
