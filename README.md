@@ -1,125 +1,91 @@
-# Next.js GitHub Pages
+# Maria Polak - DSP Computer Scientist Portfolio
 
-Deploy Next.js to GitHub Pages with GitHub Actions. [View the deployed app](https://mariapolak.github.io//) 🚀
+A modern, responsive portfolio website showcasing my work in digital signal processing, audio software development, and full-stack development. Built with Next.js, TypeScript, and Tailwind CSS.
 
-> ⚠️ Heads up! GitHub Pages _does not_ support serverless or edge functions. This means dynamic functionality will be disabled. See all the [unsupported features](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#unsupported-features).
+🚀 **[View Live Portfolio](https://mariapolak.github.io/portfolio/)**
 
----
+## About
 
-## Configure Next.js
+Hi, I'm Maria Polak, a computer scientist with a passion for digital signal processing and audio software development. This portfolio showcases my professional work across three main areas:
 
-### Next.js Config
+- **Commercial Audio Projects** - Professional VST plugins and audio software
+- **Hobby Audio Projects** - Personal audio processing experiments and tools
+- **Commercial Development** - Full-stack web applications and software solutions
 
-First, you need to configure Next.js to [deploy static exports](https://nextjs.org/docs/app/building-your-application/deploying/static-exports). This is required for GitHub Pages to work.
+## Tech Stack
 
-1. Open the `next.config.ts` file
-2. Add the following:
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Deployment**: GitHub Pages with GitHub Actions
+- **Development**: Turbopack for fast development builds
 
-```typescript
-import type { NextConfig } from "next";
+## Project Categories
 
-const nextConfig: NextConfig = {
-  /**
-   * Enable static exports.
-   *
-   * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
-   */
-  output: "export",
+### 🎵 Commercial Audio (VST Plugins)
 
-  /**
-   * Set base path. This is the slug of your GitHub repository.
-   *
-   * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
-   */
-  basePath: "",
+- **OCS-45** - Professional audio plugin
+- **PANCZ** - Audio processing tool
+- **Spacer** - Spatial audio effects
 
-  /**
-   * Disable server-based image optimization. Next.js does not support
-   * dynamic features with static exports.
-   *
-   * @see https://nextjs.org/docs/app/api-reference/components/image#unoptimized
-   */
-  images: {
-    unoptimized: true,
-  },
-};
+### 🎧 Hobby Audio Projects
 
-export default nextConfig;
-```
+- **AI_HUM** - AI-powered audio processing
+- **Banjo** - String instrument simulation
+- **Gluphone** - Experimental audio synthesizer
+- **Greverb** - Granular reverb effect
+- **MLME** - Machine learning music enhancement
+- **PSTSM** - Phase vocoder implementation
+- **Roughness** - Audio texture analysis
+- **STN** - Signal processing toolkit
+- **TimbreToys** - Audio manipulation tools
 
-3. Save the `next.config.ts`
+### 💼 Commercial Development
 
-4. Finally, place a `.nojekyll` file in the `/public` directory to disable GitHub Pages from trying to create a [Jekyll](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) website.
+- **FlashSoft** - Enterprise software solution
+- **IntakeWise** - Client management system
 
-```treeview
-.
+## Features
+
+- **Responsive Design** - Optimized for all device sizes
+- **Smooth Animations** - Powered by Framer Motion
+- **Fast Loading** - Optimized images and static generation
+- **Clean Navigation** - Smooth scrolling between sections
+- **Modern UI** - Clean, professional design aesthetic
+
+## Project Structure
+
+```text
+portfolio/
 ├── app/
-├── public/
-│   └── .nojekyll
-├── next.config.ts
+│   ├── page.tsx              # Main page with all sections
+│   ├── layout.tsx            # Root layout
+│   ├── navbar.tsx            # Navigation component
+│   ├── sections/             # Page sections
+│   │   ├── hero.tsx         # Landing section
+│   │   ├── about.tsx        # About me section
+│   │   ├── contact.tsx      # Contact information
+│   │   └── projects/        # Projects showcase
+│   └── projects/            # Individual project pages
+│       ├── vst/             # VST plugin projects
+│       ├── hobby/           # Personal audio projects
+│       └── commercial/      # Commercial development
+├── components/              # Reusable components
+├── public/                  # Static assets
+└── README.md
 ```
 
-Perfect! This is all you need to configure Next.js to deploy on GitHub Pages.
+## Contact
 
-### Add base path to `page.tsx`
+- **Email**: [Contact via portfolio](https://mariapolak.github.io/portfolio/#contact)
+- **LinkedIn**: [Connect with me](https://mariapolak.github.io/portfolio/#contact)
+- **GitHub**: [@mariapolak](https://github.com/mariapolak)
 
-Next, you will need to add the base path to images in `page.tsx` file. This is required for the images to appear on GitHub Pages.
+## License
 
-1. Open `app/page.tsx`
-2. Find the `Image` components
-3. Add `/portfolio/` (or the slug of your GitHub repository) to the `src` prop:
-
-```tsx
-<Image
-  src="/vercel.svg"
-  alt="Vercel Logo"
-  className={styles.vercelLogo}
-  width={100}
-  height={24}
-  priority
-/>
-```
-
-4. Save the `page.tsx` file
-
-Learn more by reading the official documentation [for basePath and images](https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath#images).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Configure GitHub Repository
-
-Now that Next.js is configured, you need to set up your GitHub repository to deploy to GitHub Pages.
-
-### Setup GitHub Action
-
-This is where the magic happens! This [workflow file](https://github.com/gregrickaby/portfolio/blob/main/.github/workflows/deploy.yml) will automatically build and deploy the app when you push to the `main` branch.
-
-1. Create `.github/workflows/deploy.yml` file
-2. Paste the contents of <https://github.com/gregrickaby/portfolio/blob/main/.github/workflows/deploy.yml>
-3. Save the `deploy.yml` file
-
-### Enable GitHub Pages
-
-1. Go to your repository's **Settings** tab
-2. Click "Pages" in the sidebar
-3. Under "Build and Deployment", select "GitHub Actions" as the source:
-
-![screenshot of github pages settings](https://dl.dropboxusercontent.com/s/vf74zv2wcepnt9w/Screenshot%202025-02-03%20at%2021.10.06.png?dl=0)
-
-### Push to GitHub
-
-Now that everything is configured, you can commit your code and push to GitHub. This will trigger the GitHub Action workflow and deploy your app to GitHub Pages.
-
-```bash
-git add . && git commit -m "initial commit" && git push
-```
-
-You should see your site deployed to GitHub Pages in a few minutes. 🚀
-
----
-
-## Wrap up
-
-Thanks for reading and I hope this helps. If you noticed someting wrong, please [open an issue](https://github.com/gregrickaby/portfolio/issues). Cheers! 🍻
-
----
+Built with &nbsp;🔥&nbsp; by Maria Polak
