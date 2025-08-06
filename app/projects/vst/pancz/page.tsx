@@ -18,7 +18,12 @@ export default function Pancz() {
 
     const galleryImages = [
         "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2F1.webp?alt=media&token=dab1c506-53f6-4aaf-b1de-fa593abe50e7",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2F2.webp?alt=media&token=439cf8b7-6d1f-4e92-a4d3-f8f10f73d57c"
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2F2.webp?alt=media&token=439cf8b7-6d1f-4e92-a4d3-f8f10f73d57c",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fp5.webp?alt=media&token=8eab7f04-e8e0-4e2f-a176-6141f4a3d0fd",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fp3.webp?alt=media&token=15bb2142-93f8-4000-8eea-fdd1cc5b9f01",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fp1.webp?alt=media&token=ffa03cec-1ba5-4c81-bfbd-22cc16fa7802",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fp2.webp?alt=media&token=9f52d2ce-5e23-4dd1-95ac-84435f40372e",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Pancz%2Fp4.webp?alt=media&token=f28a34e6-03b7-42cc-820c-c18f41f71811",
     ];
 
     return (

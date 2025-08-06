@@ -82,6 +82,8 @@ export default function LongProjectPage({ title, image, why, what, results, skil
                     </div>
                     <div className="flex flex-col gap-10 items-center lg:justify-start w-full lg:w-3/7 order-2 lg:order-last">
                         <Image
+                            placeholder="blur"
+                            blurDataURL="/blur.webp"
                             className="rounded-md w-2/3 lg:w-full object-contain max-h-[50vh]"
                             src={image}
                             alt="stn"

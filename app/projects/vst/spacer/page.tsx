@@ -21,14 +21,20 @@ export default function Spacer() {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F2.webp?alt=media&token=a68821e7-2dd5-48d4-830c-18ec7fe3d6db",
         "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F5.webp?alt=media&token=f669487f-9ea3-4284-9d54-fd6763b821b1",
         "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F6.webp?alt=media&token=f564d379-3983-47d0-bbd6-ffa2edaf2620",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F3.webp?alt=media&token=3abb6505-330e-4b38-9d92-a381a3690d32",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F4.webp?alt=media&token=9e03120a-ebd9-481b-b6ae-e327cd976741"
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs2.webp?alt=media&token=c2298c70-d754-4c87-a6aa-3d088aa4ebb9",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs3.webp?alt=media&token=4c8c0a9c-acb0-4391-b28b-cf7dee586455",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs4.webp?alt=media&token=78cd4bcb-e634-46f4-83cf-f51445af24ad",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs5.webp?alt=media&token=6471cd5c-32bd-4a0a-8939-664b94a45522",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs6.webp?alt=media&token=e71e1ff8-cded-4486-9189-17431ee1d6a3",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fs1.webp?alt=media&token=bddcb3ef-4a47-4478-ae31-ee8c7f19e791",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fplugin3.webp?alt=media&token=2635ce2b-1e6c-4ac1-a2ec-4d75c6815091",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F4.webp?alt=media&token=9e03120a-ebd9-481b-b6ae-e327cd976741",
     ];
 
     return (
         <LongProjectPage
             title={title}
-            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2Fplugin3.webp?alt=media&token=2635ce2b-1e6c-4ac1-a2ec-4d75c6815091"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-91518.firebasestorage.app/o/Spacer%2F3.webp?alt=media&token=3abb6505-330e-4b38-9d92-a381a3690d32"
             why={why}
             what={what}
             results={results}
